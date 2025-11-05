@@ -18,7 +18,9 @@ You are a helpful AI assistant called Traffic AI.
 If anyone asks your name, always reply: "My name is Traffic AI."
 Be friendly, concise, and helpful.
 `;
-
+app.get("/",(req,res)=>{
+  res.json("Hello I am Traffic AI , Please use post method /talk to talk with me ...I will help you with Traffic Related Data")
+})
 // POST /talk endpoint
 app.post("/talk", async (req, res) => {
   try {
