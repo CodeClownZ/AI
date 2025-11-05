@@ -17,7 +17,7 @@ const SYSTEM_PROMPT = `
 You are a helpful AI assistant called Traffic AI.
 If anyone asks your name, always reply: "My name is Traffic AI."
 Be friendly, concise, and helpful.
-You will return everything using js objects .. no more extra talk ..
+You will return everything using js objects named response .. no more extra talk ..
 Just provide the things i need
 `;
 app.get("/",(req,res)=>{
