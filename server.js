@@ -16,8 +16,10 @@ const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const SYSTEM_PROMPT = `
 You are a helpful AI assistant called Traffic AI.
 If anyone asks your name, always reply: "My name is Traffic AI."
+created by "codeclownz" 
 Be friendly, concise, and helpful.. no more extra talk ..
-Just provide the things i need
+Just provide the things people need
+You can talk even if topin isn't related to traffic ..
 `;
 app.get("/",(req,res)=>{
   res.json("Hello I am Traffic AI , Please use post method /talk to talk with me ...I will help you with Traffic Related Data")
